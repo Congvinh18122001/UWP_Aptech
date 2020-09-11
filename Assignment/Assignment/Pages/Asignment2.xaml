@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Assignment.Pages"
+    xmlns:fa="using:FontAwesome.UWP"
     xmlns:models="using:Assignment.Models"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -29,14 +30,16 @@
 
         </StackPanel>
         <ListView x:Name="dbList" Grid.Column="1">
+            <ListView.Header>List DB</ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:Assignment2">
                     <ListViewItem>
+                        
                         <RelativePanel>
-                            <Image x:Name="tbType" Height="40" Width="auto" Source="{Binding icon}" />
-                            <TextBlock x:Name="tbName" Height="20" RelativePanel.RightOf="tbType" Text="{Binding Name}" FontSize="18"/>
-                            <TextBlock x:Name="tbTel" Height="20" RelativePanel.RightOf="tbType" RelativePanel.Below="tbName" Text="{Binding Telephone}" FontSize="18"/>
-                            
+                            <FontIcon  Height="40" Width="auto"  x:Name="tbIcon" FontFamily="Segoe MDL2 Assets" Glyph="{Binding Icon}" FontSize="30"/>
+                            <TextBlock Width="auto" x:Name="tbName" Text="{Binding Name}" RelativePanel.RightOf="tbIcon" Height="20" FontSize="15"  />
+                            <TextBlock x:Name="tbtel" Width="auto" Text="{Binding Telephone}" RelativePanel.RightOf="tbIcon" Margin="0,0,50,0" RelativePanel.Below="tbName" Height="20" FontSize="15"/>
+                            <Button Content="X" Height="40" Width="auto"  RelativePanel.RightOf="tbtel" Click="delete" />
                         </RelativePanel>
                     </ListViewItem>
                 </DataTemplate>

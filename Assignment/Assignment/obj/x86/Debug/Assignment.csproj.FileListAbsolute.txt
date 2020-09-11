@@ -48,3 +48,6 @@ D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\qualifiers.txt.interm
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\ProjectArchitectures.txt
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885058160000000.json
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\FontAwesome.UWP\FontAwesome.otf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\FontAwesome.UWP.dll
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\FontAwesome.UWP.pri.xml

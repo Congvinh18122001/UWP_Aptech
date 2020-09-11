@@ -11,11 +11,16 @@ namespace Assignment.Models
         private string name;
         private string telephone;
         private string typeContact;
-        public string icon{get;set;}
+        private char icon;
         public string Name
         {
             get { return name; }
             set { name = value; }
+        }
+        public char Icon
+        {
+            get { return icon; }
+            set { icon = value; }
         }
         public string Telephone
         {
@@ -28,10 +33,10 @@ namespace Assignment.Models
             set { typeContact = value; }
         }
 
-        public Assignment2(string icon, string name, string telephone, string typeContact)
+        public Assignment2(string name, char icon, string telephone, string typeContact)
         {
-            this.icon = icon;
             Name = name;
+            Icon = icon;
             Telephone = telephone;
             TypeContact = typeContact;
         }

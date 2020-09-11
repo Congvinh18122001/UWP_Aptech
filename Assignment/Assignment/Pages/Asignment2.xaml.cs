@@ -31,20 +31,25 @@ namespace Assignment.Pages
         {
             string type = ((ComboBoxItem)cbTypeContact.SelectedItem).Content.ToString();
             string icon = "" ;
-            if (type== "Love")
+            if (type == "Love")
             {
-                icon = "https://bit.ly/3hjLD5j";
+                icon = "EB51";
             }
             else if (type == "Person")
             {
-                icon = "https://bit.ly/3ih1jYt";
+                icon = "E80F";
             }
             else if (type == "Work")
             {
-                icon = "https://bit.ly/3hhJKWP";
+                icon = "E821";
             }
-            Assignment2 db = new Assignment2(icon, txtName.Text, txtTel.Text, type );
+            Assignment2 db = new Assignment2( txtName.Text, (char)(Convert.ToInt32(icon, 16)), txtTel.Text, type );
             dbList.Items.Add(db);
+        }
+
+        private void delete(object sender, RoutedEventArgs e)
+        {
+            dbList.Items.Remove(dbList.SelectedItem);
         }
     }
 }
