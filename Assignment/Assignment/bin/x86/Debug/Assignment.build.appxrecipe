@@ -82,6 +82,15 @@
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Asignment2.xbf">
       <PackagePath>Pages\Asignment2.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Assignment3.xbf">
+      <PackagePath>Pages\Assignment3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\CustomerPage.xbf">
+      <PackagePath>Pages\CustomerPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\MailPage.xbf">
+      <PackagePath>Pages\MailPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

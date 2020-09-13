@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="Assignment.Pages.Assignment3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assignment.Pages"
+    xmlns:models="using:Assignment.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <SplitView DisplayMode="CompactInline" HorizontalAlignment="Left"
+               IsPaneOpen="False" OpenPaneLength="250" x:Name="slvMenu">
+            <SplitView.Pane>
+                <Grid>
+                    <ListView  x:Name="LV" Loaded="ListView_Loaded" Tapped="LV_Tapped">
+                        <ListView.Header>
+                            <AppBarButton x:Name="btn" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click" Icon="List" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <FontIcon VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Segoe MDL2 Assets" Glyph="&#xE847;"/>
+                            </AppBarButton>
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="models:item">
+                                <ListViewItem Tapped="ListViewItem_Tapped">
+                                    <Grid>
+                                        <FontIcon HorizontalAlignment="Left" FontFamily="Segoe MDL2 Assets" Glyph="{Binding Icon}"/>
+                                        <TextBlock VerticalAlignment="Center" Margin="45,0,0,0" Text="{Binding Name}"/>
+                                    </Grid>
+                                </ListViewItem>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </SplitView.Pane>
+            <ScrollViewer Margin="10" Loaded="ScrollViewer_Loaded" Tapped="ScrollViewer_Tapped">
+                <Frame x:Name="frMenu" />
+            </ScrollViewer>
+        </SplitView>
+
+    </Grid>
+</Page>

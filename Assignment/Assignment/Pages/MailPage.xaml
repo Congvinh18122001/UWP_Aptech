@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Assignment.Pages.MailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assignment.Pages"
+    xmlns:models="using:Assignment.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <RelativePanel Grid.Column="0">
+            <TextBox Margin="0,10,0,0" x:Name="Email" Width="180" Height="35" PlaceholderText="Email" Text=""/>
+            <TextBox RelativePanel.Below="Email" Margin="0,10,0,0"  x:Name="Subject" Width="180" Height="35" PlaceholderText="Subject" Text=""/>
+            <TextBox RelativePanel.Below="Subject" Margin="0,10,0,0"  x:Name="Contents" Width="180" Height="100" PlaceholderText="Mail Content" Text=""/>
+            <Button RelativePanel.Below="Contents" Click="Button_Click" Margin="0,10,20,0" Grid.Row="3" Content="Submit" Width="100" Height="35"/>
+        </RelativePanel>
+        <ListView Grid.Column="1" x:Name="LV">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:Mail">
+                    <ListViewItem>
+                        <RelativePanel HorizontalAlignment="Center">
+                            <TextBlock x:Name="TxtEmail" Text="{Binding Email}" />
+                            <TextBlock x:Name="TxtSub" RelativePanel.Below="TxtEmail" Text="{Binding Subject}" />
+                            <TextBlock x:Name="TxtDesc" RelativePanel.Below="TxtSub" Text="{Binding Description}"/>
+                            <HyperlinkButton RelativePanel.RightOf="TxtSub" Margin="50,0,0,0" Width="80" Height="30" Content="Delete" Click="HyperlinkButton_Click" Tag="{Binding Email}"/>
+                        </RelativePanel>
+                    </ListViewItem>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

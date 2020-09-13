@@ -123,8 +123,20 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Assignment2.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\item.cs" />
+    <Compile Include="Models\Mail.cs" />
     <Compile Include="Pages\Asignment2.xaml.cs">
       <DependentUpon>Asignment2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Assignment3.xaml.cs">
+      <DependentUpon>Assignment3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerPage.xaml.cs">
+      <DependentUpon>CustomerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MailPage.xaml.cs">
+      <DependentUpon>MailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,6 +165,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\Asignment2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Assignment3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CustomerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

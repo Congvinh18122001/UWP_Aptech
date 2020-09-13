@@ -11,7 +11,6 @@ D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Core\Assignment.exe
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Assignment.build.appxrecipe
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\System.Runtime.dll
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Assignment.csprojAssemblyReference.cache
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\App.g.i.cs
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\App.g.cs
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\MainPage.g.i.cs
@@ -51,3 +50,19 @@ D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\.winmd_cache\$Microso
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\FontAwesome.UWP\FontAwesome.otf
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\FontAwesome.UWP.dll
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\FontAwesome.UWP.pri.xml
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\CustomerPage.g.i.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\CustomerPage.g.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\CustomerPage.xaml
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\CustomerPage.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\CustomerPage.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Assignment.csprojAssemblyReference.cache
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\MailPage.g.i.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\MailPage.g.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\MailPage.xaml
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\MailPage.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\MailPage.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.g.i.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.g.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.xaml
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Assignment3.xbf
