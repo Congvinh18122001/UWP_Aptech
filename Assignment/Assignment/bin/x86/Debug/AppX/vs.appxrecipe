@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-13T08:51:28.135</Modified>
+      <Modified>2020-09-14T08:54:29.410</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Assignment.exe">
       <PackagePath>entrypoint\Assignment.exe</PackagePath>
-      <Modified>2020-09-13T08:51:27.175</Modified>
+      <Modified>2020-09-14T08:54:28.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\fontawesome.uwp\4.7.0.9\lib\uap10.0\FontAwesome.UWP.dll">
       <PackagePath>FontAwesome.UWP.dll</PackagePath>
@@ -56,69 +56,73 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-09-09T07:32:51.011</Modified>
+      <Modified>2020-09-14T07:53:06.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-13T06:56:02.929</Modified>
+      <Modified>2020-09-14T07:53:06.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Assignment.xr.xml">
       <PackagePath>Assignment.xr.xml</PackagePath>
-      <Modified>2020-09-11T14:59:25.875</Modified>
+      <Modified>2020-09-14T08:54:28.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-11T14:59:25.897</Modified>
+      <Modified>2020-09-14T08:54:28.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-11T14:59:25.897</Modified>
+      <Modified>2020-09-14T08:54:28.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Asignment2.xbf">
       <PackagePath>Pages\Asignment2.xbf</PackagePath>
-      <Modified>2020-09-11T14:59:25.898</Modified>
+      <Modified>2020-09-14T08:54:28.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Assignment3.xbf">
       <PackagePath>Pages\Assignment3.xbf</PackagePath>
-      <Modified>2020-09-13T08:51:26.988</Modified>
+      <Modified>2020-09-14T08:54:28.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\CustomerPage.xbf">
       <PackagePath>Pages\CustomerPage.xbf</PackagePath>
-      <Modified>2020-09-11T14:59:25.898</Modified>
+      <Modified>2020-09-14T08:54:28.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\mailListPage.xbf">
+      <PackagePath>Pages\mailListPage.xbf</PackagePath>
+      <Modified>2020-09-14T08:54:28.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\MailPage.xbf">
       <PackagePath>Pages\MailPage.xbf</PackagePath>
-      <Modified>2020-09-11T14:59:25.898</Modified>
+      <Modified>2020-09-14T08:54:28.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-11T14:58:25.072</Modified>
+      <Modified>2020-09-14T08:06:41.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Core\Assignment.exe">
       <PackagePath>Assignment.exe</PackagePath>
-      <Modified>2020-09-13T08:51:28.121</Modified>
+      <Modified>2020-09-14T08:54:29.403</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

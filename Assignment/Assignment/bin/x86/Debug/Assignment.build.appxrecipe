@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\CustomerPage.xbf">
       <PackagePath>Pages\CustomerPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\mailListPage.xbf">
+      <PackagePath>Pages\mailListPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\MailPage.xbf">
       <PackagePath>Pages\MailPage.xbf</PackagePath>
     </AppxPackagedFile>

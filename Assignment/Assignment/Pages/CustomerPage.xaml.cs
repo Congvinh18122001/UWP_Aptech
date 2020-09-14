@@ -29,9 +29,9 @@ namespace Assignment.Pages
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            Customer c = new Customer(FullName.Text, Telephone.Text,
-              Convert.ToInt32(Age.Text), Birthday.Date.DateTime);
-            LV.Items.Add(c);
+            Customer c = new Customer(FullName.Text,Telephone.Text,Int32.Parse(Age.Text),Birthday.Date.DateTime);
+            ViewModels.CusView.cusList.Add(c);
+            Assignment3.contentFrame.Navigate(typeof(CusListPage));
         }
 
         private void ListViewLoaded(object sender, RoutedEventArgs e)

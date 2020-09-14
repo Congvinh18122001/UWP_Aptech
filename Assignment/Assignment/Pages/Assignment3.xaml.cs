@@ -23,6 +23,7 @@ namespace Assignment.Pages
     /// </summary>
     public sealed partial class Assignment3 : Page
     {
+        public static Frame contentFrame;
         public Assignment3()
         {
             this.InitializeComponent();
@@ -30,7 +31,7 @@ namespace Assignment.Pages
 
         private void ScrollViewer_Loaded(object sender, RoutedEventArgs e)
         {
-
+            contentFrame = frMenu;
         }
 
         private void ListView_Loaded(object sender, RoutedEventArgs e)

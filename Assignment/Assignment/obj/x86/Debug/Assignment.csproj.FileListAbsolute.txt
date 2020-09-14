@@ -66,3 +66,8 @@ D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.g.c
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.xaml
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\Assignment3.xbf
 D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\Assignment3.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\bin\x86\Debug\Pages\mailListPage.xbf
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\mailListPage.g.i.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\mailListPage.g.cs
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\mailListPage.xaml
+D:\SEM3\UWP\UWP_Aptech\Assignment\Assignment\obj\x86\Debug\Pages\mailListPage.xbf

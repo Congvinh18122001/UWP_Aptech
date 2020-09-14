@@ -154,6 +154,7 @@
       <RootProperty Name="Tag" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Assignment.Pages.mailListPage" />
     <RootType FullName="Assignment.Pages.MailPage" />
   </Roots.RootTypes>
 </Roots>

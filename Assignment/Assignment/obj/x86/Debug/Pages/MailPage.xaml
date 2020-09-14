@@ -18,7 +18,9 @@
             <TextBox x:ConnectionId='9' Margin="0,10,0,0" x:Name="Email" Width="180" Height="35" PlaceholderText="Email" Text=""/>
             <TextBox x:ConnectionId='10' RelativePanel.Below="Email" Margin="0,10,0,0"  x:Name="Subject" Width="180" Height="35" PlaceholderText="Subject" Text=""/>
             <TextBox x:ConnectionId='11' RelativePanel.Below="Subject" Margin="0,10,0,0"  x:Name="Contents" Width="180" Height="100" PlaceholderText="Mail Content" Text=""/>
-            <Button x:ConnectionId='12' RelativePanel.Below="Contents"                      Margin="0,10,20,0" Grid.Row="3" Content="Submit" Width="100" Height="35"/>
+            <Button x:ConnectionId='12' x:Name="btnSm" RelativePanel.Below="Contents"                      Margin="0,10,20,0" Grid.Row="3" Content="Submit" Width="100" Height="35"/>
+            <Button x:ConnectionId='13' RelativePanel.Below="Contents" RelativePanel.RightOf="btnSm"                       Margin="0,10,20,0"  Content="List" Width="100" Height="35"/>
+
         </RelativePanel>
         <ListView x:ConnectionId='2' Grid.Column="1" x:Name="LV">
             <ListView.ItemTemplate>
