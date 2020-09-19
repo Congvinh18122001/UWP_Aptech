@@ -1,0 +1,1 @@
+D:\SEM3\UWP\WPF\Food\Food\Food.csproj;x86

@@ -1,0 +1,53 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Food.Pages.thumb2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Food.Pages"
+    xmlns:models="using:Food.models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+       
+                <Button x:ConnectionId='2' Width="40" Grid.Column="0" Height="606" x:Name="ButtonBack"                          Background="White" Style="{StaticResource NavigationBackButtonNormalStyle}" />
+        
+        <Grid Grid.Column="1">
+                <RelativePanel>
+                    <TextBlock x:ConnectionId='6' Margin="60,50,0,0" Foreground="#F2AD08" x:Name="only"  Text="Only" FontSize="26" FontFamily="Bell MT"/>
+                    <TextBlock x:ConnectionId='7' Margin="100,-20,0,0" Foreground="#F2AD08" RelativePanel.Below="only"  x:Name="foodPrice"                             FontSize="100" FontFamily="Bell MT"/>
+                    <StackPanel RelativePanel.Below="foodPrice" Margin="100,10,0,0">
+                        <TextBlock x:ConnectionId='8'                             TextWrapping="Wrap" FontWeight="Bold" FontSize="32" TextAlignment="Left"/>
+                        <TextBlock FontSize="14"/>
+                        <TextBlock  Text="With Onions and tamano       ." FontSize="22and ketchup " TextAlignment="Left"/>
+                        <TextBlock FontSize="14"/>
+                        <TextBlock Text="" FontSize="18">Lorem ipsum dolor sit omet.<LineBreak/>consecteturodip4sicing elit. sed do
+                        <LineBreak/>eiusmod iempor incididunt ut labore et
+                        <LineBreak/>dolore magno ariqua. Ut enirn ad minim veniom,
+                        <LineBreak/>quis nostrud exercitotion ullomco</TextBlock>
+                        <Button x:ConnectionId='9' Foreground="White" Margin="0,30,0,0" Background="#B6AB03" Content="Order Now" FontSize="24" Width="473" Height="82"                     />
+                    </StackPanel>
+                </RelativePanel>
+            </Grid>
+            <Grid Grid.Column="2">
+                <StackPanel>
+                    <Image x:ConnectionId='3'                              />
+                <Button x:ConnectionId='4' x:Name="fIcon" Background="White"                    >
+                    <FontIcon VerticalAlignment="Center"  HorizontalAlignment="Left" FontFamily="Segoe MDL2 Assets" Glyph="&#xEB51;"/>
+                </Button>
+                <TextBlock Text="Amount : " />
+                <TextBox x:ConnectionId='5' HorizontalAlignment="Left" Width="100" x:Name="tbAmount" PlaceholderText="Amount" Text="1"  />
+            </StackPanel>
+            </Grid>
+        </Grid>
+
+
+</Page>
+
