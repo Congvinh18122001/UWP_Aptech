@@ -32,8 +32,9 @@ namespace Food.Pages
         private MenuItem Item { get; set; }
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            MenuItem menuItem = e.Parameter as MenuItem;
-            Item = menuItem;
+            Item = e.Parameter as MenuItem;
+            ButtonBack.IsEnabled = this.Frame.CanGoBack;
+
             CatModel foods = await service.todaySpecial(Item.id);
             gvFood.ItemsSource = foods.data.foods;
         }
@@ -58,6 +59,14 @@ namespace Food.Pages
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
         }
     }
 }

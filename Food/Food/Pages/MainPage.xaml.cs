@@ -36,6 +36,7 @@ namespace Food.Pages
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync(stringUrl);
+            
             if (response.StatusCode == HttpStatusCode.OK)
             {
                 var stringContent = await response.Content.ReadAsStringAsync();

@@ -11,12 +11,22 @@
 
 
     <Grid Background="#F0F0F0">
-        <GridView x:Name="gvFood" Loaded="GridView_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <CommandBar Grid.Row="0" x:Name="CmBar" HorizontalAlignment="Left">
+            <CommandBar.Content>
+                <Button x:Name="ButtonBack" Click="ButtonBack_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" />
+            </CommandBar.Content>
+        </CommandBar>
+        <GridView Grid.Row="1" x:Name="gvFood" Loaded="GridView_Loaded">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="models:food">
                     <GridViewItem Margin="15" Width="400" Background="White" RightTapped="GridViewItem_RightTapped" Tapped="GridViewItem_Tapped">
-                        <Grid  Margin="15"  Height="auto">
+                        <Grid  Margin="10"  Height="auto">
                             <RelativePanel>
+                               
                                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" x:Name="txtName" Text="{Binding name}" FontSize="22" FontWeight="Bold"/>
                                 <Image RelativePanel.Below="txtName" Margin="30" x:Name="img" Source="{Binding image}" Width="auto" Height="250"/>
                                 <TextBlock Margin="0,20,0,20" RelativePanel.Below="img" x:Name="txtdes" Text="{Binding description}" FontSize="14" />

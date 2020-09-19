@@ -11,5 +11,12 @@ namespace Food.models
         public int id { get; set; }
         public string icon { get; set; }
         public string name { get; set; }
+
+        public MenuItem(int id, string icon, string name)
+        {
+            this.id = id;
+            this.icon = icon;
+            this.name = name;
+        }
     }
 }

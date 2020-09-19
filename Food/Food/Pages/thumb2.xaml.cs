@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Food.Services;
+using Food.Viewsmodels;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Food.Pages
@@ -33,13 +34,23 @@ namespace Food.Pages
         {
             food = e.Parameter as food;
             foodDetail f = await service.todaySpecial(food.id);
+            ButtonBack.IsEnabled = this.Frame.CanGoBack;
             food = f.data;
-
         }
-
         private void lvItem_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        }
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                this.Frame.GoBack();
+            }
         }
     }
 }

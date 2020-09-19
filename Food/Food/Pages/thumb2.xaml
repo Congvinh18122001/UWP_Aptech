@@ -10,31 +10,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
-                    <Grid Background="White">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid Grid.Column="0">
-                            <RelativePanel>
-                                <TextBlock Margin="100,50,0,0" Foreground="#F2AD08" x:Name="only"  Text="Only" FontSize="26" FontFamily="Bell MT"/>
-                <TextBlock Margin="140,-20,0,0" Foreground="#F2AD08" RelativePanel.Below="only"  x:Name="foodPrice"  Text="{x:Bind food.Price}" FontSize="100" FontFamily="Bell MT"/>
-                                <StackPanel RelativePanel.Below="foodPrice" Margin="140,10,0,0">
-                    <TextBlock   Text="{x:Bind food.name}" TextWrapping="Wrap" FontWeight="Bold" FontSize="38" TextAlignment="Left"/>
-                                    <TextBlock FontSize="14"/>
-                                    <TextBlock  Text="With Onions and tamano       ." FontSize="22and ketchup " TextAlignment="Left"/>
-                                    <TextBlock FontSize="14"/>
-                                    <TextBlock Text="" FontSize="18">Lorem ipsum dolor sit omet.<LineBreak/>consecteturodip4sicing elit. sed do
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+       
+                <Button Width="40" Grid.Column="0" Height="606" x:Name="ButtonBack" Click="ButtonBack_Click" Background="White" Style="{StaticResource NavigationBackButtonNormalStyle}" />
+        
+        <Grid Grid.Column="1">
+                <RelativePanel>
+                    <TextBlock Margin="60,50,0,0" Foreground="#F2AD08" x:Name="only"  Text="Only" FontSize="26" FontFamily="Bell MT"/>
+                    <TextBlock Margin="100,-20,0,0" Foreground="#F2AD08" RelativePanel.Below="only"  x:Name="foodPrice"  Text="{x:Bind food.Price}" FontSize="100" FontFamily="Bell MT"/>
+                    <StackPanel RelativePanel.Below="foodPrice" Margin="100,10,0,0">
+                        <TextBlock   Text="{x:Bind food.name}" TextWrapping="Wrap" FontWeight="Bold" FontSize="32" TextAlignment="Left"/>
+                        <TextBlock FontSize="14"/>
+                        <TextBlock  Text="With Onions and tamano       ." FontSize="22and ketchup " TextAlignment="Left"/>
+                        <TextBlock FontSize="14"/>
+                        <TextBlock Text="" FontSize="18">Lorem ipsum dolor sit omet.<LineBreak/>consecteturodip4sicing elit. sed do
                         <LineBreak/>eiusmod iempor incididunt ut labore et
                         <LineBreak/>dolore magno ariqua. Ut enirn ad minim veniom,
                         <LineBreak/>quis nostrud exercitotion ullomco</TextBlock>
-                                    <Button Foreground="White" Margin="0,40,0,0" Background="#B6AB03" Content="Order Now" FontSize="24" Width="473" Height="82"/>
-                                </StackPanel>
-                            </RelativePanel>
-                        </Grid>
-                        <Grid Grid.Column="1">
-                      <Image Margin="0,-100,0,0" Source="{x:Bind food.image }"/>
-                        </Grid>
-                    </Grid>
+                        <Button Foreground="White" Margin="0,30,0,0" Background="#B6AB03" Content="Order Now" FontSize="24" Width="473" Height="82" Click="Button_Click"/>
+                    </StackPanel>
+                </RelativePanel>
+            </Grid>
+            <Grid Grid.Column="2">
+                <StackPanel>
+                    <Image  Source="{x:Bind food.image}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
 
 </Page>

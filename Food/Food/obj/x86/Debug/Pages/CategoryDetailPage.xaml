@@ -11,17 +11,27 @@
 
 
     <Grid Background="#F0F0F0">
-        <GridView x:ConnectionId='2' x:Name="gvFood"                         >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <CommandBar x:ConnectionId='2' Grid.Row="0" x:Name="CmBar" HorizontalAlignment="Left">
+            <CommandBar.Content>
+                <Button x:ConnectionId='11' x:Name="ButtonBack"                          Style="{StaticResource NavigationBackButtonNormalStyle}" />
+            </CommandBar.Content>
+        </CommandBar>
+        <GridView x:ConnectionId='3' Grid.Row="1" x:Name="gvFood"                         >
             <GridView.ItemTemplate>
                 <DataTemplate                         >
-                    <GridViewItem x:ConnectionId='4' Margin="15" Width="400" Background="White"                                                                    >
-                        <Grid  Margin="15"  Height="auto">
+                    <GridViewItem x:ConnectionId='5' Margin="15" Width="400" Background="White"                                                                    >
+                        <Grid  Margin="10"  Height="auto">
                             <RelativePanel>
+                               
                                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" x:Name="txtName" Text="{Binding name}" FontSize="22" FontWeight="Bold"/>
                                 <Image RelativePanel.Below="txtName" Margin="30" x:Name="img" Source="{Binding image}" Width="auto" Height="250"/>
                                 <TextBlock Margin="0,20,0,20" RelativePanel.Below="img" x:Name="txtdes" Text="{Binding description}" FontSize="14" />
                                 <TextBlock Foreground="Blue" RelativePanel.Below="txtdes" x:Name="txtpr" Text="{Binding Price}" FontSize="20" FontWeight="Bold" ></TextBlock>
-                                <Button x:ConnectionId='9' Margin="150,0,0,0"  Background="#B6AB03" Foreground="White" RelativePanel.Below="txtdes" HorizontalAlignment="Right" RelativePanel.RightOf="txtpr" Content="Oder Now"                       />
+                                <Button x:ConnectionId='10' Margin="150,0,0,0"  Background="#B6AB03" Foreground="White" RelativePanel.Below="txtdes" HorizontalAlignment="Right" RelativePanel.RightOf="txtpr" Content="Oder Now"                       />
                             </RelativePanel>
                         </Grid>
                     </GridViewItem>
