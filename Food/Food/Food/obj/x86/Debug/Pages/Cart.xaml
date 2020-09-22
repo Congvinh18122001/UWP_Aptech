@@ -18,10 +18,10 @@
                 <ListViewItem x:ConnectionId='4'>
                     <Grid Height="70" Margin="5,10,0,10">
                         <RelativePanel>
-                            <Image x:ConnectionId='5' x:Name="imgF"                         HorizontalAlignment="Left"/>
+                            <Image x:ConnectionId='5' x:Name="imgF"                         HorizontalAlignment="Left"                     />
                             <TextBlock x:ConnectionId='6' Padding="8" x:Name="nF" RelativePanel.RightOf="imgF"                     />
                             <TextBlock x:ConnectionId='7' Padding="8" x:Name="prF" RelativePanel.RightOf="prT" RelativePanel.Below="nF"                       />
-                            <TextBlock x:ConnectionId='8' Padding="25" x:Name="amF" RelativePanel.RightOf="amT"                       />
+                            <TextBox x:ConnectionId='8' Padding="25" x:Name="amF"  RelativePanel.RightOf="amT"                                             />
                             <TextBlock Padding="25" x:Name="amT" RelativePanel.RightOf="nF" Text="Amount :"/>
 
                             <TextBlock Padding="8" x:Name="prT" RelativePanel.RightOf="imgF" RelativePanel.Below="nF"  Text="Price :"/>

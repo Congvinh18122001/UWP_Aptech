@@ -117,6 +117,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Adapters\Adapter.cs" />
+    <Compile Include="Adapters\SQLLiteHelper.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -155,6 +156,7 @@
     <Compile Include="Services\categoryDetailService.cs" />
     <Compile Include="Services\foodService.cs" />
     <Compile Include="Services\productService.cs" />
+    <Compile Include="Viewsmodels\cartModel.cs" />
     <Compile Include="Viewsmodels\CartView.cs" />
     <Compile Include="Viewsmodels\favoriteView.cs" />
     <Compile Include="Viewsmodels\foodItem.cs" />
@@ -225,8 +227,15 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
+    <PackageReference Include="SQLitePCL">
+      <Version>3.8.7.2</Version>
+    </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.33.0">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

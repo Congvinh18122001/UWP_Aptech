@@ -35,9 +35,10 @@ namespace Food.Pages
 
             MainPage.mainFrame.Navigate(typeof(thumb2), food);
         }
+        private favoriteView favoriteView = new favoriteView();
         private void lvFav_Loaded(object sender, RoutedEventArgs e)
         {
-            lvCart.ItemsSource = Viewsmodels.favoriteView.favoriteList ;
+            lvCart.ItemsSource = favoriteView.GetFavourite() ;
         }
 
     }

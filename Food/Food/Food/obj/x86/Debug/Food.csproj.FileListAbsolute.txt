@@ -79,3 +79,10 @@ D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\Pages\Favorite.g.i.cs
 D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\Pages\Favorite.g.cs
 D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\Pages\Favorite.xaml
 D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\Pages\Favorite.xbf
+D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\SQLitePCL.Ext.dll
+D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\SQLitePCL.Ext.pri
+D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\SQLitePCL.dll
+D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
+D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\resources.en.resfiles
+D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\resources.en.resfiles.intermediate
+D:\SEM3\UWP\WPF\Food\Food\obj\x86\Debug\SQLitePCL.Ext.pri.xml

@@ -39,7 +39,7 @@
             <Grid Grid.Column="2">
                 <StackPanel>
                     <Image x:ConnectionId='3'                              />
-                <Button x:ConnectionId='4' x:Name="fIcon" Background="White"                    >
+                <Button x:ConnectionId='4' x:Name="fIcon" Background="White"                     >
                     <FontIcon VerticalAlignment="Center"  HorizontalAlignment="Left" FontFamily="Segoe MDL2 Assets" Glyph="&#xEB51;"/>
                 </Button>
                 <TextBlock Text="Amount : " />

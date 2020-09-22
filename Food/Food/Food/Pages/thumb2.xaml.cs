@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Food.Services;
 using Food.Viewsmodels;
+using Food.Adapters;
+using SQLitePCL;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Food.Pages
@@ -36,21 +38,23 @@ namespace Food.Pages
             foodDetail f = await service.todaySpecial(food.id);
             ButtonBack.IsEnabled = this.Frame.CanGoBack;
             food = f.data;
+           
         }
         private void lvItem_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
-
+        private cartModel cartModel = new cartModel();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(tbAmount.Text) && Int32.Parse(tbAmount.Text) > 0)
             {
-                CartItem cartItem = new CartItem(food.name, food.image, food.price, Int32.Parse(tbAmount.Text));
-                CartView.cart.Add(cartItem);
+                cartModel.addItemToCart(food,tbAmount.Text);
+                MainPage.mainFrame.Navigate(typeof(Cart));
             }
            
         }
+        favoriteView favoriteView = new favoriteView();
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             if (this.Frame.CanGoBack)
@@ -62,11 +66,11 @@ namespace Food.Pages
         private void fIcon_Click(object sender, RoutedEventArgs e)
         {
             bool isCheck = false;
-            foreach (food item in favorite.foods )
+            foreach (food item in favoriteView.GetFavourite() )
             {
                 if (item.id == food.id)
                 {
-                    Viewsmodels.favoriteView.favoriteList.Remove(item);
+                    favoriteView.deleteFavorite(item.id);
                     MainPage.mainFrame.Navigate(typeof(Favorite));
                     isCheck = true;
                     break;
@@ -74,7 +78,9 @@ namespace Food.Pages
             }
             if (!isCheck)
             {
-                favorite.foods.Add(food);
+                favoriteView.addFavorite(food);
+                MainPage.mainFrame.Navigate(typeof(Favorite));
+
             }
         }
     }
