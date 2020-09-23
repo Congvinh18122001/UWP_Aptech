@@ -54,16 +54,16 @@ namespace Food.Pages
 
         private void GridViewItem_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
-            food food = (food)gvFood.SelectedItem;
-            foodItem.foodData = food;
-            MainPage.mainFrame.Navigate(typeof(thumb1));
+            food food = gvFood.SelectedItem as food;
+
+            MainPage.mainFrame.Navigate(typeof(thumb2), food);
         }
 
         private void GridViewItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            food food = (food)gvFood.SelectedItem;
-            foodItem.foodData = food;
-            MainPage.mainFrame.Navigate(typeof(thumb1));
+            food food = gvFood.SelectedItem as food;
+
+            MainPage.mainFrame.Navigate(typeof(thumb2), food);
         }
     }
 }

@@ -56,11 +56,6 @@ namespace Food.Pages
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
             if (this.Frame.CanGoBack)

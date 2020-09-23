@@ -117,23 +117,32 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Adapters\Adapter.cs" />
+    <Compile Include="Adapters\CartService.cs" />
+    <Compile Include="Adapters\SQLLiteHelper.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="models\CartItem.cs" />
     <Compile Include="models\CatModel.cs" />
     <Compile Include="models\food.cs" />
     <Compile Include="models\fooddata.cs" />
     <Compile Include="models\foodDetail.cs" />
     <Compile Include="models\Menu.cs" />
     <Compile Include="models\MenuItem.cs" />
+    <Compile Include="Pages\Cart.xaml.cs">
+      <DependentUpon>Cart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CategoryDetailPage.xaml.cs">
       <DependentUpon>CategoryDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\eat.xaml.cs">
       <DependentUpon>eat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Favorite.xaml.cs">
+      <DependentUpon>Favorite.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -148,6 +157,9 @@
     <Compile Include="Services\categoryDetailService.cs" />
     <Compile Include="Services\foodService.cs" />
     <Compile Include="Services\productService.cs" />
+    <Compile Include="Viewsmodels\cartModel.cs" />
+    <Compile Include="Viewsmodels\CartView.cs" />
+    <Compile Include="Viewsmodels\favoriteView.cs" />
     <Compile Include="Viewsmodels\foodItem.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -180,11 +192,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\Cart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CategoryDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\eat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Favorite.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -208,8 +228,15 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
+    <PackageReference Include="SQLitePCL">
+      <Version>3.8.7.2</Version>
+    </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.33.0">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

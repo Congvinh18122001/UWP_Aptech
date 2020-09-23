@@ -10,9 +10,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     
-    <Grid Margin="10">
+    <Grid >
         <SplitView Background="#f0f0f0"  PaneBackground="#292728" OpenPaneLength="200" DisplayMode="Inline" IsPaneOpen="True">
             <SplitView.Pane>
+                
                 <ListView Margin="0,50,0,0" x:Name="lvMenu" Loaded="Menu_Loaded" Tapped="Menu_Tapped" >
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:MenuItem">

@@ -39,7 +39,12 @@
             <Grid Grid.Column="2">
                 <StackPanel>
                     <Image  Source="{x:Bind food.image}"/>
-                </StackPanel>
+                <Button x:Name="fIcon" Background="White"  Click="fIcon_Click">
+                    <FontIcon VerticalAlignment="Center"  HorizontalAlignment="Left" FontFamily="Segoe MDL2 Assets" Glyph="&#xEB51;"/>
+                </Button>
+                <TextBlock Text="Amount : " />
+                <TextBox HorizontalAlignment="Left" Width="100" x:Name="tbAmount" PlaceholderText="Amount" Text="1"  />
+            </StackPanel>
             </Grid>
         </Grid>
 

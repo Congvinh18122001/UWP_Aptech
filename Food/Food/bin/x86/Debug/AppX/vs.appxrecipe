@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B5753F528D123C8D7C814AEB58166DA64E8BAF5AE11EFA3681D2428CBFE6E6B0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F17AF5755A4BBD050381A52B2B9065F5ABE33B0006A5D9E2572D72943E691396</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c4e2cd7b-85cf-4dc6-9cf5-d0e80a6df010_1.0.0.0_x86__hqhyg1cvr7f3y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c4e2cd7b-85cf-4dc6-9cf5-d0e80a6df010_hqhyg1cvr7f3y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c4e2cd7b-85cf-4dc6-9cf5-d0e80a6df010</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-18T14:17:02.866</Modified>
+      <Modified>2020-09-23T09:34:21.312</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Food.exe">
       <PackagePath>entrypoint\Food.exe</PackagePath>
-      <Modified>2020-09-18T14:17:02.357</Modified>
+      <Modified>2020-09-23T09:34:20.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -46,9 +46,21 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T07:01:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T11:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.33.0\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2020-09-21T07:29:46.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\Assets\food.jpg">
       <PackagePath>Assets\food.jpg</PackagePath>
@@ -114,35 +126,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Food.xr.xml">
       <PackagePath>Food.xr.xml</PackagePath>
-      <Modified>2020-09-18T13:26:58.420</Modified>
+      <Modified>2020-09-23T09:34:20.769</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\Cart.xbf">
+      <PackagePath>Pages\Cart.xbf</PackagePath>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\CategoryDetailPage.xbf">
       <PackagePath>Pages\CategoryDetailPage.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\eat.xbf">
       <PackagePath>Pages\eat.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\Favorite.xbf">
+      <PackagePath>Pages\Favorite.xbf</PackagePath>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\thumb1.xbf">
       <PackagePath>Pages\thumb1.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Pages\thumb2.xbf">
       <PackagePath>Pages\thumb2.xbf</PackagePath>
-      <Modified>2020-09-18T14:17:02.210</Modified>
+      <Modified>2020-09-23T09:34:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -150,11 +170,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-09-18T09:00:49.000</Modified>
+      <Modified>2020-09-23T07:48:56.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\Food\Food\bin\x86\Debug\Core\Food.exe">
       <PackagePath>Food.exe</PackagePath>
-      <Modified>2020-09-18T14:17:02.861</Modified>
+      <Modified>2020-09-23T09:34:21.308</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

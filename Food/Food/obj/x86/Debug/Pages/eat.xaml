@@ -20,7 +20,6 @@
                                 <Image RelativePanel.Below="txtName" Margin="30" x:Name="img" Source="{Binding image}" Width="auto" Height="250"/>
                                 <TextBlock Margin="0,20,0,20" RelativePanel.Below="img" x:Name="txtdes" Text="{Binding description}" FontSize="14" />
                                 <TextBlock Foreground="Blue" RelativePanel.Below="txtdes" x:Name="txtpr" Text="{Binding Price}" FontSize="20" FontWeight="Bold" ></TextBlock>
-                                <Button x:ConnectionId='9' Margin="150,0,0,0"  Background="#B6AB03" Foreground="White" RelativePanel.Below="txtdes" HorizontalAlignment="Right" RelativePanel.RightOf="txtpr" Content="Oder Now"                       />
                             </RelativePanel>
                         </Grid>
                     </GridViewItem>    

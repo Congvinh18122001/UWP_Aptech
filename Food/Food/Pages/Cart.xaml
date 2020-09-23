@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Food.Pages.Cart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Food.Pages"
+    xmlns:models="using:Food.models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0" x:Name="lvCart" Loaded="lvCart_Loaded">
+            <ListView.Header>
+                <TextBlock HorizontalAlignment="Center" Margin="22" FontSize="15" Text="Cart" FontWeight="Bold"/>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="models:CartItem">
+                    <ListViewItem>
+                        <Grid Height="70" Margin="5,10,0,10">
+                            <RelativePanel>
+                                <Image x:Name="imgF" RelativePanel.RightOf="btndlt" Source="{x:Bind image}" HorizontalAlignment="Left" Tapped="imgF_Tapped"/>
+                                <TextBlock Padding="8" x:Name="nF" RelativePanel.RightOf="imgF" Text="{x:Bind name}"/>
+                                <TextBlock Padding="8" x:Name="prF" RelativePanel.RightOf="prT" RelativePanel.Below="nF"  Text="{x:Bind Price}"/>
+                                <TextBox Padding="25" x:Name="amF" Tag="{Binding}" RelativePanel.RightOf="amT" Text="{x:Bind amount}" TextChanged="amF_TextChanged"/>
+                                <TextBlock Padding="25" x:Name="amT" RelativePanel.RightOf="nF" Text="Amount :"/>
+
+                                <TextBlock Padding="8" x:Name="prT" RelativePanel.RightOf="imgF" RelativePanel.Below="nF"  Text="Price :"/>
+                                <HyperlinkButton Width="auto" x:Name="btndlt" Content="delete" Margin="20" Foreground="Red" Tapped="HyperlinkButton_Tapped" />
+                            </RelativePanel>
+                        </Grid>
+                    </ListViewItem>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <RelativePanel Grid.Row="1"  Margin="15" Loaded="RelativePanel_Loaded">
+            <TextBlock RelativePanel.RightOf="btncl" x:Name="ttpr" Text="Total price : "/>
+            <TextBlock   RelativePanel.RightOf="ttpr"  Text="{Binding total}"/>
+            <Button  Margin="20" Content="Clear"  x:Name="btncl" Foreground="White" Background="red" Click="Button_Click" />
+        </RelativePanel>
+    </Grid>
+</Page>

@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+SQLitePCL.Ext.dll
+SQLitePCL.Ext.pri
 Assets\food.jpg
 Assets\food1.jpg
 Assets\food2.jpg
@@ -15,8 +17,10 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Food.xr.xml
 MainPage.xbf
+Pages\Cart.xbf
 Pages\CategoryDetailPage.xbf
 Pages\eat.xbf
+Pages\Favorite.xbf
 Pages\MainPage.xbf
 Pages\thumb1.xbf
 Pages\thumb2.xbf

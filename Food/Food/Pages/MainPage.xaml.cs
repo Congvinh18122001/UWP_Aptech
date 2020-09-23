@@ -16,6 +16,8 @@ using Food.models;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Net;
+using Food.Viewsmodels;
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Food.Pages
@@ -36,13 +38,25 @@ namespace Food.Pages
         {
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync(stringUrl);
-            
-            if (response.StatusCode == HttpStatusCode.OK)
+            List<MenuItem> Menus = new List<MenuItem>();
+                if (response.StatusCode == HttpStatusCode.OK)
             {
                 var stringContent = await response.Content.ReadAsStringAsync();
                 Menu list = JsonConvert.DeserializeObject<Menu>(stringContent);
-                lvMenu.ItemsSource = list.data;
+                Menus = list.data;
             }
+            List<MenuItem> menus = new List<MenuItem>();
+            menus.Add(new MenuItem(16, "https://bit.ly/2REFwxV", "Home"));
+            foreach (MenuItem item in Menus)
+            {
+                menus.Add(item);
+            }
+            int count = 0;
+           
+            menus.Add(new MenuItem(15, "https://bit.ly/3cbxne3", "Cart"));
+            menus.Add(new MenuItem(14, "https://bit.ly/2RIu8Ba", "Favorite"));
+
+            lvMenu.ItemsSource = menus;
         }
         private void Menu_Loaded(object sender, RoutedEventArgs e)
         {
@@ -52,7 +66,22 @@ namespace Food.Pages
         private void Menu_Tapped(object sender, TappedRoutedEventArgs e)
         {
             MenuItem menuItem = lvMenu.SelectedItem as MenuItem;
-            MainFrame.Navigate(typeof(CategoryDetailPage),menuItem);
+            if (menuItem.id == 16)
+            {
+                MainFrame.Navigate(typeof(eat));
+            }
+            else if (menuItem.id == 15)
+            {
+                MainFrame.Navigate(typeof(Cart));
+            }
+            else if (menuItem.id == 14)
+            {
+                MainFrame.Navigate(typeof(Favorite));
+            }
+            else {
+                MainFrame.Navigate(typeof(CategoryDetailPage), menuItem);
+            }
+           
         }
 
         private void MainFrame_Loaded(object sender, RoutedEventArgs e)
