@@ -30,13 +30,15 @@ namespace Food.Pages
             this.InitializeComponent();
         }
         private MenuItem Item { get; set; }
+        private List<food> foodList = new List<food>();
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             Item = e.Parameter as MenuItem;
             ButtonBack.IsEnabled = this.Frame.CanGoBack;
 
             CatModel foods = await service.todaySpecial(Item.id);
-            gvFood.ItemsSource = foods.data.foods;
+            foodList = foods.data.foods;
+            gvFood.ItemsSource = foodList;
         }
 
         private void GridViewItem_RightTapped(object sender, RightTappedRoutedEventArgs e)
@@ -62,6 +64,39 @@ namespace Food.Pages
             {
                 this.Frame.GoBack();
             }
+        }
+
+        private void s1_Checked(object sender, RoutedEventArgs e)
+        {
+            var PersonListSort = foodList.OrderBy(P => P.price);
+            gvFood.ItemsSource = PersonListSort;
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            var PersonListSort = foodList.OrderBy(P => P.name);
+            gvFood.ItemsSource = PersonListSort;
+        }
+
+        private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var search = new List<food>();
+            if (string.IsNullOrEmpty(txtSearch.Text))
+            {
+                gvFood.ItemsSource = foodList;
+            }
+            else
+            {
+                foreach (food food in foodList)
+                {
+                    if (food.name.Contains(txtSearch.Text))
+                    {
+                        search.Add(food);
+                    }
+                }
+                gvFood.ItemsSource = search;
+            }
+            
         }
     }
 }

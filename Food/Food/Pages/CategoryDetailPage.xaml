@@ -15,11 +15,16 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <CommandBar Grid.Row="0" x:Name="CmBar" HorizontalAlignment="Left">
-            <CommandBar.Content>
-                <Button x:Name="ButtonBack" Click="ButtonBack_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" />
-            </CommandBar.Content>
-        </CommandBar>
+        <RelativePanel Grid.Row="0" HorizontalAlignment="Left">
+            <CommandBar  x:Name="CmBar" >
+                <CommandBar.Content>
+                    <Button x:Name="ButtonBack" Click="ButtonBack_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" />
+                </CommandBar.Content>
+            </CommandBar>
+            <RadioButton Margin="30,0,0,0" RelativePanel.RightOf="CmBar" x:Name="s1" GroupName="sort" Content="Sort by price" Checked="s1_Checked" />
+            <RadioButton  x:Name="s2" RelativePanel.RightOf="s1" GroupName="sort" Content="Sort by name" Checked="RadioButton_Checked" />
+            <TextBox RelativePanel.RightOf="s2" Margin="40,0,0,0" MinWidth="100" x:Name="txtSearch" PlaceholderText="Search..." TextChanged="txtSearch_TextChanged"/>
+        </RelativePanel>
         <GridView Grid.Row="1" x:Name="gvFood" Loaded="GridView_Loaded">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="models:food">

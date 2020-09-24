@@ -42,6 +42,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootEvent Name="Loaded" />
       <RootMethod Name="GetRightOf" />
@@ -97,9 +98,11 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="PlaceholderText" />
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
@@ -111,10 +114,6 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Food.Pages.Cart" />
-    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="Loaded" />
@@ -126,6 +125,15 @@
       <RootProperty Name="Content" />
       <RootEvent Name="RightTapped" />
       <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="GroupName" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Food.Pages.CategoryDetailPage" />

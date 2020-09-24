@@ -15,15 +15,20 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <CommandBar x:ConnectionId='2' Grid.Row="0" x:Name="CmBar" HorizontalAlignment="Left">
-            <CommandBar.Content>
-                <Button x:ConnectionId='10' x:Name="ButtonBack"                          Style="{StaticResource NavigationBackButtonNormalStyle}" />
-            </CommandBar.Content>
-        </CommandBar>
-        <GridView x:ConnectionId='3' Grid.Row="1" x:Name="gvFood"                         >
+        <RelativePanel Grid.Row="0" HorizontalAlignment="Left">
+            <CommandBar x:ConnectionId='9'  x:Name="CmBar" >
+                <CommandBar.Content>
+                    <Button x:ConnectionId='13' x:Name="ButtonBack"                          Style="{StaticResource NavigationBackButtonNormalStyle}" />
+                </CommandBar.Content>
+            </CommandBar>
+            <RadioButton x:ConnectionId='10' Margin="30,0,0,0" RelativePanel.RightOf="CmBar" x:Name="s1" GroupName="sort" Content="Sort by price"                      />
+            <RadioButton x:ConnectionId='11'  x:Name="s2" RelativePanel.RightOf="s1" GroupName="sort" Content="Sort by name"                               />
+            <TextBox x:ConnectionId='12' RelativePanel.RightOf="s2" Margin="40,0,0,0" MinWidth="100" x:Name="txtSearch" PlaceholderText="Search..."                                    />
+        </RelativePanel>
+        <GridView x:ConnectionId='2' Grid.Row="1" x:Name="gvFood"                         >
             <GridView.ItemTemplate>
                 <DataTemplate                         >
-                    <GridViewItem x:ConnectionId='5' Margin="15" Width="400" Background="White"                                                                    >
+                    <GridViewItem x:ConnectionId='4' Margin="15" Width="400" Background="White"                                                                    >
                         <Grid  Margin="10"  Height="auto">
                             <RelativePanel>
                                
