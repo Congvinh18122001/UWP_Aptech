@@ -38,19 +38,20 @@ namespace PRACTICAL.Pages
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
             List<User> users = new UserModel().getUsers();
+            bool ischeck = false;
             foreach (User user in users)
             {
-                if (!user.account.Equals(tbUsername.Text))
-                {
-                    mes.Text = "acc not exist";
-                }else if (!user.password.Equals(tbUsername.Text))
-                {
-                    mes.Text = "pass not exist";
-                }
-                else
+                if (user.account.Equals(tbUsername.Text) && user.password.Equals(tbPass.Text))
                 {
                     mes.Text = "success";
+                    ischeck = true;
+                    break;
                 }
+               
+            }
+            if (!ischeck)
+            {
+                mes.Text = "false";
             }
         }
     }

@@ -8,8 +8,8 @@ namespace PRACTICAL.Models
 {
     class User
     {
-        string account { get; set; }
-        string password { get; set; }
+       public string account { get; set; }
+        public string password { get; set; }
 
         public User(string account, string password)
         {

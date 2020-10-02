@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B654217E5BF27CEAF8B5A3F0BA7B22ABB80B0AF71AA02CBF72DF4C5284543123</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9BD1AC90B10AC4E66C156B468721E6EC50ADFCC1433AA190C3389CBD36A459A3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f7aa13ab-8e7b-4f14-aaf3-c99f5ad15d49_1.0.0.0_x86__hqhyg1cvr7f3y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f7aa13ab-8e7b-4f14-aaf3-c99f5ad15d49_hqhyg1cvr7f3y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f7aa13ab-8e7b-4f14-aaf3-c99f5ad15d49</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-02T08:58:46.419</Modified>
+      <Modified>2020-10-02T13:16:46.835</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\PRACTICAL.exe">
       <PackagePath>entrypoint\PRACTICAL.exe</PackagePath>
-      <Modified>2020-10-02T08:58:45.931</Modified>
+      <Modified>2020-10-02T13:16:46.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -46,9 +46,21 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T07:01:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T11:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.33.0\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2020-09-21T07:29:46.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -90,19 +102,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\PRACTICAL.xr.xml">
       <PackagePath>PRACTICAL.xr.xml</PackagePath>
-      <Modified>2020-10-02T08:46:08.586</Modified>
+      <Modified>2020-10-02T09:44:33.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-02T08:58:45.708</Modified>
+      <Modified>2020-10-02T13:16:46.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-02T08:58:45.708</Modified>
+      <Modified>2020-10-02T13:16:46.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Pages\EmployeeList.xbf">
       <PackagePath>Pages\EmployeeList.xbf</PackagePath>
-      <Modified>2020-10-02T08:58:45.708</Modified>
+      <Modified>2020-10-02T13:16:46.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Pages\Login.xbf">
+      <PackagePath>Pages\Login.xbf</PackagePath>
+      <Modified>2020-10-02T13:16:46.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-02T08:58:46.029</Modified>
+      <Modified>2020-10-02T09:44:34.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Core\PRACTICAL.exe">
       <PackagePath>PRACTICAL.exe</PackagePath>
-      <Modified>2020-10-02T08:58:46.414</Modified>
+      <Modified>2020-10-02T13:16:46.830</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

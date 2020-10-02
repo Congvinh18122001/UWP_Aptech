@@ -49,3 +49,15 @@ D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\MultipleQualifiersPerDimension
 D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\ProjectArchitectures.txt
 D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885058160000000.json
 D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Newtonsoft.Json.dll
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\SQLitePCL.Ext.dll
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\SQLitePCL.Ext.pri
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\Pages\Login.xbf
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\bin\x86\Debug\SQLitePCL.dll
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\Pages\Login.g.i.cs
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\Pages\Login.g.cs
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\Pages\Login.xaml
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\Pages\Login.xbf
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\SQLitePCL\en\SQLitePCL.Resources.resw
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\resources.en.resfiles
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\resources.en.resfiles.intermediate
+D:\SEM3\UWP\WPF\PRACTICAL\PRACTICAL\obj\x86\Debug\SQLitePCL.Ext.pri.xml

@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+SQLitePCL.Ext.dll
+SQLitePCL.Ext.pri
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -9,5 +11,6 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 Pages\EmployeeList.xbf
+Pages\Login.xbf
 PRACTICAL.xr.xml
 Properties\Default.rd.xml
